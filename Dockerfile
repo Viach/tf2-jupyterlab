@@ -8,4 +8,4 @@ RUN mkdir data
 
 WORKDIR /data
 
-CMD ["jupyter", "lab", "--allow-root", "--notebook-dir=/data/"]
+CMD ["jupyter", "lab", "--allow-root", "--notebook-dir=/data/", "--ip=0.0.0.0", "--port=8888"]
