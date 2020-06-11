@@ -2,7 +2,7 @@ FROM  tensorflow/tensorflow:2.2.0-jupyter
 
 RUN apt update -y && apt upgrade -y  && apt install unzip nano git apt-utils -y
 
-RUN pip install jupyterlab pandas flask keras numpy scikit-learn 
+RUN pip install jupyterlab pandas flask keras numpy scikit-learn pandas-profiling
 
 RUN mkdir data
 
